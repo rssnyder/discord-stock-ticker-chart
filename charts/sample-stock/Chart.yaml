@@ -1,0 +1,4 @@
+apiVersion: v2
+name: sample-stock
+description: sample-stock tickerbot
+version: 1.0.3

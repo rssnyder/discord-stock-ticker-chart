@@ -1,0 +1,4 @@
+env:
+  DISCORD_BOT_TOKEN: "ABCDEF0123456789"
+  STOCK_NAME: "sample-stock"
+  TICKER: "XYZ"

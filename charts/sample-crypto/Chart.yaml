@@ -1,0 +1,4 @@
+apiVersion: v2
+name: sample-crypo
+description: sample-crypto tickerbot
+version: 1.0.3

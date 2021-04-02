@@ -1,0 +1,19 @@
+apiVersion: v2
+appVersion: "1.8.1"
+description: discord stock ticker bot
+name: tickerbot
+version: 1.0.3
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - bot
+  - stocks
+  - discord
+sources:
+  - https://github.com/rssnyder/discord-stock-ticker
+    https://github.com/jr0dd/discord-stock-ticker-chart
+icon: https://yt3.ggpht.com/a/AATXAJyg-fbSlEWGUgmsY_0DBQKQThY_Shh_yHGGAQ=s900-c-k-c0xffffffff-no-rj-mo
+dependencies:
+  - name: sample-stock
+    version: 1.0.3
+  - name: sample-crypto
+    version: 1.0.3

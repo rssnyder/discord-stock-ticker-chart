@@ -1,0 +1,15 @@
+global:
+  image:
+    repository: ghcr.io/rssnyder/discord-stock-ticker
+    tag: "1.8.1"
+    pullPolicy: IfNotPresent
+  replicas: 1
+  strategy:
+    type: Recreate
+  env:
+    FLASH_CHANGE: "1"
+    FREQUENCY: "3"
+    POST_MARKET_PRICE: "3"
+    SET_COLOR: "1"
+    SET_NICKNAME: "1"
+    TZ: "America/New_York"
