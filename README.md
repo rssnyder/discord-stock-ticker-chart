@@ -1,7 +1,9 @@
 This chart was created for self-hosting @rssnyder's discord-stock-ticker docker image on Kubernetes clusters
 His repo can be found here https://github.com/rssnyder/discord-stock-ticker
 
+
 **Chart tree**
+```
 ├── Chart.yaml
 ├── README.md
 ├── charts
@@ -18,6 +20,7 @@ His repo can be found here https://github.com/rssnyder/discord-stock-ticker
 ├── templates
 │   └── _deployment.tpl
 └── values.yaml
+```
 
 Each ticker bot that you want to run will be a subchart.
 
@@ -70,3 +73,6 @@ env:
   DISCORD_BOT_TOKEN: "ABCDEF0123456789"
   CRYPTO_NAME: "bitcoin"
   TICKER: "BTC"
+```
+
+If you have any issues with the template I will do my best do address. 
