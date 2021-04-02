@@ -22,10 +22,16 @@ His repo can be found here https://github.com/rssnyder/discord-stock-ticker
 └── values.yaml
 ```
 
-Each ticker bot that you want to run will be a subchart.
-
+**Each ticker bot that you want to run will be a subchart.**
 
 **Instructions:**
+
+Use the same value across the following:
+- the dependency in the parent `Chart.yaml`
+- the subchart directory name
+- the name in subchart's `Chart.yaml`
+- the `STOCK_NAME` or `CRYPTO_NAME` in the subchart's `values.yaml`
+
 
 I will be using `tsla` as the stock exaple and `bitcoin` as the crypto example in these instructions.
 
@@ -39,14 +45,6 @@ dependencies:
     version: 1.0.3
 ```
 The version is the subchart's version that's in the subchart's `Chart.yaml`. I used the same versions for the parent chart as well as the subcharts for simplicity.
-
-***NOTE:***
-
-Use the same value across the following:
-- the dependency in the parent `Chart.yaml`
-- the subchart directory name
-- the name in subchart's `Chart.yaml`
-- the `STOCK_NAME` or `CRYPTO_NAME` in the subchart's `values.yaml`
 
 The `values.yaml` for the parent chart contains all the environmental variables that will apply to every subchart. Edit to your preferences. Whenever @rssnyder updates his docker image the image tag will need to be updated here as well as the `appVersion` the parent `Chart.yaml`.
 
